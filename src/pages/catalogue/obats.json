@@ -1,61 +1,61 @@
 [
     {
-        "img": "/assets/Gaviscon.png",
+        "img": "/PharmaPlan/assets/Gaviscon.png",
         "title": "Gaviscon Mint Liquid Mint Flavour",
         "price": 95000
     },
     {
-        "img": "/assets/Mylanta.png",
+        "img": "/PharmaPlan/assets/Obat/Mylanta.png",
         "title": "Mylanta Syrup and Tablet",
         "price": 40000
     },
     {
-        "img": "/assets/Panadol.png",
+        "img": "/PharmaPlan/assets/Obat/Panadol.png",
         "title": "Panadol Extra Tablet",
         "price": 15000
     },
     {
-        "img": "/assets/Pantoprazole.png",
+        "img": "/PharmaPlan/assets/Obat/Pantoprazole.png",
         "title": "Pantoprazole",
         "price": 270000
     },
     {
-        "img": "/assets/Vicks-44-Syrup.png",
+        "img": "/PharmaPlan/assets/Obat/Vicks-44-Syrup.png",
         "title": "Vicks 44 Syrup",
         "price": 95000
     },
     {
-        "img": "/assets/Ator.png",
+        "img": "/PharmaPlan/assets/Obat/Ator.png",
         "title": "Atorvastin Calcium Trihydrate",
         "price": 95000
     },
     {
-        "img": "/assets/Ventolin-Inhaler.jpeg",
+        "img": "/PharmaPlan/assets/Obat/Ventolin-Inhaler.jpeg",
         "title": "Ventolin Inhaler",
         "price": 200000
     },
     {
-        "img": "/assets/Actifed.jpeg",
+        "img": "/PharmaPlan/assets/Obat/Actifed.jpeg",
         "title": "Actifed Plus Expectorant Syrup",
         "price": 66000
     },
     {
-        "img": "/assets/Tremenza.png",
+        "img": "/PharmaPlan/assets/Obat/Tremenza.png",
         "title": "Tremenza Syrup and Tablet",
         "price": 45000
     },
     {
-        "img": "/assets/Nin.jpeg",
+        "img": "/PharmaPlan/assets/Obat/Nin.jpeg",
         "title": "Nin Jiom Pei Pa Koa",
         "price": 144000
     },
     {
-        "img": "/assets/Tolak.jpeg",
+        "img": "/PharmaPlan/assets/Obat/Tolak.jpeg",
         "title": "Tolak Angin Sidomuncul",
         "price": 37000
     },
     {
-        "img": "/assets/Planb.png",
+        "img": "/PharmaPlan/assets/Obat/Planb.png",
         "title": "Plan B One-Step",
         "price": 37000
     }

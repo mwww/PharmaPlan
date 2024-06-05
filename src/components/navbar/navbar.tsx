@@ -13,24 +13,24 @@ interface NavBarProps {
 }
 
 export default function Navbar({isSpacer}: NavBarProps) {
-    const navbarLinks = [
-      {
-        name: "Home",
-        link: "/"
-      },
-      {
-        name: "Article",
-        link: "/article"
-      },
-      {
-        name: "Medicine",
-        link: "/medicine"
-      },
-      {
-        name: "Planner",
-        link: "/planner"
-      },
-    ]
+      const navbarLinks = [
+        {
+          name: "Home",
+          link: "/PharmaPlan/"
+        },
+        {
+          name: "Article",
+          link: "/article"
+        },
+        {
+          name: "Medicine",
+          link: "/medicine"
+        },
+        {
+          name: "Planner",
+          link: "/planner"
+        },
+      ]
 
     // console.log(`${!!isSpacer}`)
 
@@ -41,10 +41,10 @@ export default function Navbar({isSpacer}: NavBarProps) {
     return (
       <nav className={`${style.main} ${isSpacer && style.isSpacer} el`}>
         <div>
-          <a href="/" >
+          <Link to="/" >
             <img src={lg} alt="" />
             <h1>PharmaPlan</h1>
-          </a>
+          </Link>
           <div className="nav_right">
           <ul>
             {navbarLinks.map((l, index) => (
@@ -57,9 +57,9 @@ export default function Navbar({isSpacer}: NavBarProps) {
             {/* <SearchBar/> */}
             <div className={style.cta}>
               <InputBar placeholder="Find Medicine" leftIcon={searchIco} />
-              <a href="/login">
+              <Link to="/login">
                 <button className={style.btn_login}>Login</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
