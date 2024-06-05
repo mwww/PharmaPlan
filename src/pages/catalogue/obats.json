@@ -1,0 +1,62 @@
+[
+    {
+        "img": "/assets/Gaviscon.png",
+        "title": "Gaviscon Mint Liquid Mint Flavour",
+        "price": 95000
+    },
+    {
+        "img": "/assets/Mylanta.png",
+        "title": "Mylanta Syrup and Tablet",
+        "price": 40000
+    },
+    {
+        "img": "/assets/Panadol.png",
+        "title": "Panadol Extra Tablet",
+        "price": 15000
+    },
+    {
+        "img": "/assets/Pantoprazole.png",
+        "title": "Pantoprazole",
+        "price": 270000
+    },
+    {
+        "img": "/assets/Vicks-44-Syrup.png",
+        "title": "Vicks 44 Syrup",
+        "price": 95000
+    },
+    {
+        "img": "/assets/Ator.png",
+        "title": "Atorvastin Calcium Trihydrate",
+        "price": 95000
+    },
+    {
+        "img": "/assets/Ventolin-Inhaler.jpeg",
+        "title": "Ventolin Inhaler",
+        "price": 200000
+    },
+    {
+        "img": "/assets/Actifed.jpeg",
+        "title": "Actifed Plus Expectorant Syrup",
+        "price": 66000
+    },
+    {
+        "img": "/assets/Tremenza.png",
+        "title": "Tremenza Syrup and Tablet",
+        "price": 45000
+    },
+    {
+        "img": "/assets/Nin.jpeg",
+        "title": "Nin Jiom Pei Pa Koa",
+        "price": 144000
+    },
+    {
+        "img": "/assets/Tolak.jpeg",
+        "title": "Tolak Angin Sidomuncul",
+        "price": 37000
+    },
+    {
+        "img": "/assets/Planb.png",
+        "title": "Plan B One-Step",
+        "price": 37000
+    }
+]

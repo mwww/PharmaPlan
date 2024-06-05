@@ -1,0 +1,33 @@
+.cont {
+    box-sizing: content-box;
+    background-color: #FFF;
+    padding: 20px;
+    // display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    // width: min-content;
+    // height: min-content;
+    // min-height: min-content;
+    max-height: 336px;
+    border-radius: 10px;
+    > div:nth-child(1) {
+        // width: 190px;
+        height: 200px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    > div:nth-child(2) {
+        margin-top: 20px;
+        font-size: 16px;
+        // padding: 20px;
+        h5 {
+            // margin-top: 50px;
+            font-size: 20px;
+            margin-bottom: 10px;
+            min-height: 60px;
+        }
+    }
+}

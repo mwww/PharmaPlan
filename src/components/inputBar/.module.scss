@@ -1,0 +1,42 @@
+.cont {
+    pointer-events: inherit;
+    border-radius: 20px;
+
+    // isolation: isolate;
+    position: relative;
+    > img {
+        position: absolute;
+        padding: 12px 21px;
+
+        pointer-events: none;
+
+        // min-width: 1rem;
+        // min-height: 1rem;
+
+        // max-width: 1rem;
+        // max-height: 1rem;
+
+        width: calc(1rem + 42px);
+        height: calc(1rem + 24px);
+    }
+
+    > img.r_ico {
+        right: 0;
+    }
+}
+
+.searchBar {
+    all: unset;
+    padding: 10px 20px;
+    // padding-left: calc(20px + 16px + 10px);
+    border: 1px solid #0A2A76;
+    border-radius: 20px;
+}
+
+.searchBar.p_l {
+    padding-left: calc(20px + 1rem + 10px) !important;
+}
+
+.searchBar.p_r {
+    padding-right: calc(20px + 1rem + 10px) !important;
+}

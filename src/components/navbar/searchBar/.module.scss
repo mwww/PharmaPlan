@@ -1,0 +1,18 @@
+.cont {
+    border-radius: 20px;
+    > img {
+        position: absolute;
+        padding: 12px 21px;
+
+        pointer-events: none;
+
+    }
+}
+
+.searchBar {
+    all: unset;
+    padding: 10px 20px;
+    padding-left: calc(20px + 16px + 10px);
+    border: 1px solid #0A2A76;
+    border-radius: 20px;
+}
