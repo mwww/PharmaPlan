@@ -1,0 +1,21 @@
+.promos_container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 67px; 
+    > h1{
+        margin-bottom: 20px;
+    }
+    .promos{
+        display: flex;
+        > img{
+            cursor: pointer;
+            max-width: 49%;
+            flex: 1;
+            transition: transform 0.3s ease-in-out;
+            
+        }
+        > img:hover{
+            transform: translateY(-5px);
+        }
+    }
+}

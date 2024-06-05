@@ -41,7 +41,7 @@ export default function Navbar({isSpacer}: NavBarProps) {
     return (
       <nav className={`${style.main} ${isSpacer && style.isSpacer} el`}>
         <div>
-          <Link to="/" >
+          <Link to="/PharmaPlan/" >
             <img src={lg} alt="" />
             <h1>PharmaPlan</h1>
           </Link>
