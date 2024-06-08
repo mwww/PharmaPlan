@@ -38,25 +38,33 @@
 // export default App
 
 import { Routes, Route, BrowserRouter } from "react-router-dom"
-
+import { useState } from 'react';
 import Layout from "./components/layout/layout"
 
 import Home from "./pages/home"
 import Article from "./pages/article"
 import Catalogue from "./pages/catalogue"
 import Login from "./pages/login"
+import Planner from "./pages/planner"
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
   return (
+    
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout/>}>
+        <Route element={<Layout isLoggedIn={isLoggedIn}/>}>
           <Route path="/PharmaPlan/" element={<Home />} />
-          <Route path="/article" element={<Article />} />
-          <Route path="/medicine" element={<Catalogue />} />
-          <Route path="/planner" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/PharmaPlan/article" element={<Article />} />
+          <Route path="/PharmaPlan/medicine" element={<Catalogue />} />
+          <Route path="/PharmaPlan/planner" element={<Planner />} />
+          <Route path="/PharmaPlan/login" element={<Login onLogin={handleLogin}/>} />
         </Route>
       </Routes>
+
     </BrowserRouter>
   )
 }

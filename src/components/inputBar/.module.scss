@@ -40,3 +40,22 @@
 .searchBar.p_r {
     padding-right: calc(20px + 1rem + 10px) !important;
 }
+
+.itemContainer{
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    .item{
+        padding: 0 5px;
+        cursor: pointer;
+        display: flex;
+        
+        .item_bi{
+            background-image: var(--background-img);
+            padding: 50px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}

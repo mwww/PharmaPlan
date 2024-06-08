@@ -3,16 +3,18 @@
     gap: 40px;
     > div:nth-child(1) {
         width: 100%;
+        // background-color: black;
         > h5 {
             font-size: 20px;
             margin-bottom: 20px;
         }
-        > ul {
-            padding-left: 20px;
-            > li {
-                margin-bottom: 10px;
-            }
+        .list {
+            background-color: black;
+           > input {
+            display: none;
+           }
         }
+    
     }
     > div:nth-child(2) {
         width: 100%;
@@ -28,5 +30,18 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
+    }
+}
+
+.categoryContainer{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    input {
+        display: none;
+    }
+    label {
+        margin-bottom: 15px;
+        cursor: pointer;
     }
 }

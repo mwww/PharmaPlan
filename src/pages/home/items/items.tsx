@@ -10,7 +10,7 @@ export default function Hero() {
             <h1>Trace back to your last bought Items</h1>
             
             <div className={css.items}>
-                <Link to='/medicine'>
+                <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
                         <img src={planb} alt="" />
@@ -21,7 +21,7 @@ export default function Hero() {
                     </div>
                 </div>
                 </Link>
-                <Link to='/medicine'>
+                <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
                         <img src={panadol} alt="" />
@@ -32,7 +32,7 @@ export default function Hero() {
                     </div>
                 </div>
                 </Link>
-                <Link to='/medicine'>
+                <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
                         <img src={tremenza} alt="" />

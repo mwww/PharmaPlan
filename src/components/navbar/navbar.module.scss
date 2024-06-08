@@ -2,7 +2,7 @@
     background-color: hsla(220, 23%, 95%, 0.85);
     backdrop-filter: blur(25px);
 
-    z-index: 69420;
+    z-index: 2;
     padding: 20px 0;
 
     position: fixed;
@@ -67,6 +67,19 @@
 .cta {
     display: flex;
     gap: 10px;
+
+    
+}
+
+.profile_pic{
+    background-image: url("./default-pfp-2.jpg");
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .btn_login {
@@ -80,6 +93,7 @@
     box-shadow: 0px 0px 0px 0px hsla(222, 25%, 20%, .25);
     transition: box-shadow .25s ease-in-out;
 }
+
 
 .btn_login:hover {
     box-shadow: 0px 5px 25px 2px hsla(222, 25%, 20%, .25);

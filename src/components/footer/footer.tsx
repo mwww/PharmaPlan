@@ -18,18 +18,18 @@ export default function Footer() {
           <h1>PharmaPlan</h1>
         </div>
         <div className={style.rightfooter}>
-          <div className={style.column}>
-            <h3>Info</h3>
-            <p>Contact Us</p>
-            <p>Privacy Policy</p>
-            <p>Terms and Conditions</p>
-          </div>
+        <div className={style.column}>
+          <h3>Info</h3>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+        </div>
           <div className={style.column}>
             <h3>Social Media</h3>
-            <p>Instagram</p>
-            <p>Reddit</p>
-            <p>Twitter</p>
-            <p>Facebook</p>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.reddit.com/" target="_blank">Reddit</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
           </div>
         </div>
       </div>

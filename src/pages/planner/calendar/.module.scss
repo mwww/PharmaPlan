@@ -1,0 +1,66 @@
+.calendar {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    background-color: white;
+    .monthHeader{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+        > button{
+            background-color: white;
+            border: none;
+            padding: 20px;
+            cursor: pointer;
+        }
+    }
+    .day {
+        // border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        &:not(.highlightedDay):hover   {
+            background-color: #f0f0f0;
+          }
+
+        .emptyDay{
+            cursor:default;
+        }
+      }
+    .emptyDay {
+        background-color: #f2f2f2; /* Gray background color for empty day cells */
+        cursor: default;
+      }
+    
+    .highlightedDay {
+        background-color: #346EC6;
+    }
+
+    
+      
+      
+  }
+  
+  .month {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .weekdays {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 5px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  
+  

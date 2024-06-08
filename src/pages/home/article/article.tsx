@@ -7,7 +7,7 @@ export default function Hero() {
         <div className={css.article_wrapper}>
             <h1>Recommended</h1>
             <div className={css.articles}>
-                <Link to="/article">
+                <Link to="/PharmaPlan/article">
                 <div className={css.article_card}>
                     <img src={tzield} alt="" />
                     <div className={css.article_text}>
@@ -16,7 +16,7 @@ export default function Hero() {
                     </div>
                 </div>
                 </Link>
-                <Link to="/article">
+                <Link to="/PharmaPlan/article">
                 <div className={css.article_card}>
                     <img src={smoking} alt="" />
                     <div className={css.article_text}>
