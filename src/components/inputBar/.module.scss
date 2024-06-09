@@ -43,13 +43,19 @@
 
 .itemContainer{
     position:absolute;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    
     .item{
         padding: 0 5px;
         cursor: pointer;
         display: flex;
-        
+        &:hover{
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .item_details{
+            padding: 0 10px;
+        }
         .item_bi{
             background-image: var(--background-img);
             padding: 50px;

@@ -1,7 +1,5 @@
 import css from './.module.scss';
 import { Link } from "react-router-dom";
-import tzield from "./Tzield.png";
-import smoking from "./Smoke.png";
 export default function Hero() {
     return (
         <div className={css.article_wrapper}>
@@ -9,7 +7,7 @@ export default function Hero() {
             <div className={css.articles}>
                 <Link to="/PharmaPlan/article">
                 <div className={css.article_card}>
-                    <img src={tzield} alt="" />
+                    <img src="./assets/Home/Tzield.png" alt="" />
                     <div className={css.article_text}>
                         <p>Smelly Wibu Nerdy Writer</p>
                         <h4>Tzield, new breakthrough medicine for Type-1 Diabetes</h4>
@@ -18,7 +16,7 @@ export default function Hero() {
                 </Link>
                 <Link to="/PharmaPlan/article">
                 <div className={css.article_card}>
-                    <img src={smoking} alt="" />
+                    <img src="./assets/Home/Smoke.png" alt="" />
                     <div className={css.article_text}>
                         <p>Smelly Wibu Nerdy Writer</p>
                         <h4>Tzield, new breakthrough medicine for Type-1 Diabetes</h4>

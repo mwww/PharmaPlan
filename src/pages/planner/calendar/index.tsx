@@ -72,6 +72,7 @@ const Calendar: React.FC = () => {
 
   return (
     <div className={style.calendar}>
+      <h1>Calendar</h1>
       <div className={style.monthHeader}>
         <button onClick={goToPreviousMonth}>&lt;</button>
         <div className={style.monthText}>

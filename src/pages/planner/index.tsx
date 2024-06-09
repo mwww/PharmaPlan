@@ -8,6 +8,7 @@ export default function Planner() {
     return (
         <div className={css.cont}>
             <div className={css.calendar}>
+                {/* <h1>Calendar</h1> */}
                 <Calendar />
             </div>
             <div className={css.planner}>

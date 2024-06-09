@@ -2,9 +2,6 @@ import { useState, ChangeEvent, KeyboardEvent } from 'react';
 
 import setTitle from "../../helper/title/title";
 import css from './.module.scss';
-import google from './icons/Google.png';
-import meta from './icons/Meta.png';
-import microsoft from './icons/Microsoft.png';
 import next from './next.png';
 import Modal from './modal/modal';
 
@@ -64,9 +61,9 @@ export default function Login({onLogin} : LoginProps) {
                 <img src={next} alt="" onClick={handleSubmit} style={{ cursor: 'pointer' }} />
                 <p>Or use one of the following provider</p>
                 <div className={css.icons}>
-                    <img src={google} alt="Google" width="25" />
-                    <img src={meta} alt="Meta" width="25" />
-                    <img src={microsoft} alt="Microsoft" width="25" />
+                    <img src="./assets/Login/icons/Google.png" alt="Google" width="25" onClick={handleSubmit}/>
+                    <img src="./assets/Login/icons/Meta.png" alt="Meta" width="25" onClick={handleSubmit}/>
+                    <img src="./assets/Login/icons/Microsoft.png" alt="Microsoft" width="25" onClick={handleSubmit}/>
                 </div>
             </div>
 

@@ -1,7 +1,4 @@
 import css from './.module.scss';
-import planb from './Planb.png';
-import panadol from './Panadol.png';
-import tremenza from './Tremenza.png';
 import { Link } from "react-router-dom";
 
 export default function Hero() {
@@ -13,7 +10,7 @@ export default function Hero() {
                 <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
-                        <img src={planb} alt="" />
+                        <img src="./assets/Obat/Planb.png" alt="" />
                     </div>
                     <div className={css.items_text}>
                         <h4>Plan B One-Step</h4>
@@ -24,7 +21,7 @@ export default function Hero() {
                 <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
-                        <img src={panadol} alt="" />
+                        <img src="./assets/Obat/Panadol.png" alt="" />
                     </div>
                     <div className={css.items_text}>
                         <h4>Mylanta</h4>
@@ -35,7 +32,7 @@ export default function Hero() {
                 <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
-                        <img src={tremenza} alt="" />
+                        <img src="./assets/Obat/Tremenza.png" alt="" />
                     </div>
                     <div className={css.items_text}>
                         <h4>Tremenza</h4>
