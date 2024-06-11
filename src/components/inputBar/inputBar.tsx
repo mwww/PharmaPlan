@@ -29,7 +29,7 @@ const InputBar: React.FC<InputBarProps> = ({
   OnChange,
   borderRadius,
   maxItemsToShow = 5,
-  debounceDelay = 100,
+  debounceDelay = 200,
 }) => {
   const [inputValue, setInputValue] = useState("");
   const [filteredItems, setFilteredItems] = useState<Item[]>([]);

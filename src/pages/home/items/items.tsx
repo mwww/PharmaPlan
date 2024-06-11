@@ -10,7 +10,7 @@ export default function Hero() {
                 <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
-                        <img src="./assets/Obat/Planb.png" alt="" />
+                        <img src="./assets/Obat/Planb.png" alt="Plan B One-Step" />
                     </div>
                     <div className={css.items_text}>
                         <h4>Plan B One-Step</h4>
@@ -21,18 +21,18 @@ export default function Hero() {
                 <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
-                        <img src="./assets/Obat/Panadol.png" alt="" />
+                        <img src="./assets/Obat/Panadol.png" alt="Mylanta" />
                     </div>
                     <div className={css.items_text}>
-                        <h4>Mylanta</h4>
-                        <p>Emergency Contraceptive</p>
+                        <h4>Panadol</h4>
+                        <p>Pain Reliever</p>
                     </div>
                 </div>
                 </Link>
                 <Link to='/PharmaPlan/medicine'>
                 <div className={css.item_card}>
                     <div className={css.items_img_container}>
-                        <img src="./assets/Obat/Tremenza.png" alt="" />
+                        <img src="./assets/Obat/Tremenza.png" alt="Tremenza" />
                     </div>
                     <div className={css.items_text}>
                         <h4>Tremenza</h4>

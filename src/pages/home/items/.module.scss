@@ -11,7 +11,7 @@
         .item_card{
             box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            width: 20vw;
+            width: 300px;
             text-align: center;
             transition: transform 0.3s ease-in-out;
             .items_img_container{
@@ -33,3 +33,18 @@
         
     }
 }
+@media screen and (max-width: 1000px) {
+    .items_container {
+      margin: 20px;
+    }
+  
+    .items {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+    }
+  
+    .item_card {
+      width: 100%; /* Increase width for better readability on smaller screens */
+      margin-bottom: 20px; /* Add margin to separate items */
+    }
+  }

@@ -20,7 +20,7 @@ export default function Article() {
             <p>The Smelly Wibu Nerdy Writer, October 18, 2023</p>
           </div>
         </div>
-        <div>
+        <div className={css.text}>
           <p>
           In November 2022, teplizumab-mzwv (TZIELD; Provention Bio, Inc., a Sanofi Company, Red Bank, NJ) became the first drug approved to change the progression of autoimmunity in type 1 diabetes (i.e., to delay the onset of stage 3 type 1 diabetes in adults and children age ≥8 years with stage 2 disease). The approval of teplizumab represents the first drug approval for the delay of any autoimmune disease in patients before clinical onset. Decades of studies preceded the approval of teplizumab, beginning with preclinical studies followed by six clinical trials, including five in patients after clinical diagnosis (stage 3) and one in patients before clinical diagnosis (stage 2) who had two or more pancreatic islet autoantibodies and dysglycemia. These studies were used as support in the U.S. Food and Drug Administration Biologics Licenses Application submission and design of the PROTECT (Phase 3 Trial Evaluating Teplizumab in Patients With Recent-Onset Type 1 Diabetes) study (clinical trial reg. no. NCT03875729, ClinicalTrials.gov).
           </p>

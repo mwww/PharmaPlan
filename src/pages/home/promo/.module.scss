@@ -19,3 +19,16 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .promos_container{
+        margin: 100px 10px;
+        .promos{
+            flex-direction: column;
+            > img{
+                max-width: 100%;
+            }
+        }
+    }
+    
+  }

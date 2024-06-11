@@ -110,3 +110,12 @@ a {
   border-radius: 1px;
   // background-color: black;
 }
+
+@media screen and (max-width: 1000px) {
+  .el > div {
+    padding: 0;
+    margin: 0;
+    // width: 70%;
+    // display: none;
+  }
+}

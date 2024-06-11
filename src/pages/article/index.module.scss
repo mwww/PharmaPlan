@@ -11,7 +11,7 @@
         margin-bottom: 100px;
         > div {
             margin: 0 40px;
-            padding: 50px 40px;
+            // padding: 50px 40px;
 
             border-radius: 10px;
         }
@@ -21,7 +21,16 @@
             margin-bottom: 40px;
             position: relative;
             background-image: url(/assets/bg_article.png);
-
+            > div{
+                position: relative;
+                bottom: -417px;
+                background-color: rgba($color: #ffffff, $alpha: 0.7);
+                width: 100%;
+                padding: 15px;
+                > *{
+                    margin-left: 20px;
+                }
+            }
             // mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 75%);
             > * {
                 position: absolute;
@@ -34,3 +43,27 @@
         }
     }
 }
+@media screen and (max-width: 500px) {
+    .text{
+        padding-top: 100px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cont {
+        > article{
+            > div{
+                margin: 0;
+            }
+            > div:nth-child(1) {
+                height: 500px;
+                // margin: 0 40px;
+                margin-bottom: 40px;
+                position: relative;
+                background-position: center;
+                background-image: url(/assets/bg_article.png);
+            }
+        }
+    }
+}
+

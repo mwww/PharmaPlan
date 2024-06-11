@@ -18,8 +18,8 @@ export default function Hero() {
                 <div className={css.article_card}>
                     <img src="./assets/Home/Smoke.png" alt="" />
                     <div className={css.article_text}>
-                        <p>Smelly Wibu Nerdy Writer</p>
-                        <h4>Tzield, new breakthrough medicine for Type-1 Diabetes</h4>
+                        <p>Captain Obvious</p>
+                        <h4>Smoking is bad for your health, study says</h4>
                     </div>
                 </div>
                 </Link>

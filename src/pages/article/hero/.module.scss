@@ -44,3 +44,12 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .hero_container{
+        padding: 0;
+        > div{
+            padding: 0;
+        }
+    }
+}
