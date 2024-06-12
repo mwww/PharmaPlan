@@ -31,3 +31,20 @@
         }
     }
 }
+svg {
+    // background-color: rgba(13, 218, 33, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    // color: black;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.bot_card{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    
+}
