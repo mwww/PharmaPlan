@@ -7,10 +7,12 @@ interface _cardProps {
     imgPath: string;
     title: string;
     price: number;
+    onAddToCart?: () => void; // Add the onAddToCart property with an optional modifier
 }
 
 
-const _card: React.FC<_cardProps> = ({imgPath, title, price}: _cardProps) => {
+
+const _card: React.FC<_cardProps> = ({imgPath, title, price, onAddToCart}: _cardProps) => {
     const style: { [key: string]: React.CSSProperties } = {
         b_i: {
             // borderRadius: `${borderRadius}px`,
@@ -30,8 +32,8 @@ const _card: React.FC<_cardProps> = ({imgPath, title, price}: _cardProps) => {
                 <h5>{title}</h5>
                 <div className={css.bot_card}>
                     <p>{`Rp. ${price.toLocaleString()}`}</p>
-                    <div>
-                        <FontAwesomeIcon icon={faShoppingCart} onClick={incrementCount} />
+                    <div className={css.icon}>
+                        <FontAwesomeIcon icon={faShoppingCart} onClick={onAddToCart} />
                     </div>
                 </div>
                 

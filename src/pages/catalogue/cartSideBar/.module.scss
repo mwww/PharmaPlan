@@ -1,0 +1,84 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; // Hidden by default
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    > div:nth-child(2) {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1947B2;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            background-color: #0d4de1;
+        }
+    }
+    &.open {
+        right: 0;
+    }
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cartList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .cartImage {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    button {
+        position: relative;
+        top: -30px;
+        right: -170px;
+        background-color: white;
+        padding: 10px;
+        border: 0px solid coral;
+        color: coral;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

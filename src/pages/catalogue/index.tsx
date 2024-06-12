@@ -2,21 +2,22 @@ import { useState } from 'react';
 import setTitle from "../../helper/title/title";
 import css from './.module.scss';
 import Card from "./card/card"; 
+import CartSidebar from './cartSideBar/cartSidebar';
 import obats from "./obats.json";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
-// Define an interface for the structure of a medicine object
 interface Medicine {
     img: string;
     title: string;
     price: number;
     category: string; 
+    count?: number;
 }
-
 
 export default function Catalogue() {
     setTitle("Medicine");
 
-    // Define filter categories and options
     const filterOptions = {
         category: [
         "All",
@@ -29,15 +30,44 @@ export default function Catalogue() {
         "Pain Relief"] 
     };
 
-
     const [selectedFilters, setSelectedFilters] = useState<{[key: string]: string}>({}); 
-
+    const [cartItems, setCartItems] = useState<Medicine[]>([]);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const handleFilterChange = (category: string, value: string) => { 
         setSelectedFilters(prevFilters => ({
             ...prevFilters,
             [category]: value
         }));
+    };
+
+    const handleAddToCart = (item: Medicine) => {
+        const existingItemIndex = cartItems.findIndex(cartItem => cartItem.title === item.title);
+    
+        if (existingItemIndex !== -1) {
+            const updatedCartItems = [...cartItems];
+            updatedCartItems[existingItemIndex] = {
+                ...updatedCartItems[existingItemIndex],
+                count: (updatedCartItems[existingItemIndex].count || 0) + 1
+            };
+            setCartItems(updatedCartItems);
+        } else {
+            setCartItems(prevItems => [...prevItems, { ...item, count: 1 }]);
+        }
+    
+        setIsSidebarOpen(true);
+    };
+
+    const handleRemoveItem = (title: string) => {
+        setCartItems(prevItems => prevItems.filter(item => item.title !== title));
+    };
+    
+    const sidebarOpen = () => {
+        setIsSidebarOpen(true);
+    };
+
+    const handleCloseSidebar = () => {
+        setIsSidebarOpen(false);
     };
 
     const filteredObats = obats.filter((obat: Medicine) => {
@@ -49,16 +79,13 @@ export default function Catalogue() {
         }
         return true;
     });
-    
 
     return (
         <div className={css.cont}>
             <div>
                 <h5>Categories</h5>
-                {/* Render filter options */}
                 {Object.entries(filterOptions).map(([category, options]) => (
                     <div key={category} className={css.categoryContainer}>
-                        {/* Render radio buttons for each option */}
                         {options.map(option => (
                             <label key={option} className={css.radioLabel}>
                                 <input
@@ -75,11 +102,27 @@ export default function Catalogue() {
                 ))}
             </div>
             <div>
-                {/* Render filtered cards */}
                 {filteredObats.map(obat => (
-                    <Card imgPath={obat.img} title={obat.title} price={obat.price}/>
+                    <Card 
+                        key={obat.title}
+                        imgPath={obat.img} 
+                        title={obat.title} 
+                        price={obat.price} 
+                        onAddToCart={() => handleAddToCart(obat)}
+                    />
                 ))}
             </div>
+            <CartSidebar 
+                items={cartItems} 
+                isOpen={isSidebarOpen} 
+                onClose={handleCloseSidebar} 
+                onRemoveItem={handleRemoveItem} // Pass down the remove handler
+            />
+            {!isSidebarOpen ? (
+                <div className={css.sidebar_button} onClick={sidebarOpen}>
+                    <FontAwesomeIcon icon={faAngleLeft} />
+                </div>
+            ) : null}
         </div>
     );
 }

@@ -47,14 +47,14 @@ import Catalogue from "./pages/catalogue"
 import Login from "./pages/login"
 import Planner from "./pages/planner"
 import Profile from "./pages/profile"
-
+import Checkout from "./pages/checkout";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
-  
+
   return (
     <BrowserRouter>
       <Routes>
@@ -65,6 +65,7 @@ function App() {
           <Route path="/PharmaPlan/planner" element={<Planner />} />
           <Route path="/PharmaPlan/login" element={<Login onLogin={handleLogin}/>} />
           <Route path="/PharmaPlan/profile" element={<Profile />} />
+          <Route path="/PharmaPlan/checkout" element={<Checkout />}></Route>
         </Route>
       </Routes>
 

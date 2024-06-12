@@ -60,3 +60,17 @@
       }
     }
 }
+
+.sidebar_button{
+    position: fixed;
+    top: 22.5px;
+    right: 10px;
+    // background-color: black;
+    // padding: 500px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+
+}

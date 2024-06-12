@@ -31,22 +31,24 @@
         }
     }
 }
-svg {
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: 500;
-    // color: black;
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: #1947B2;
-    color: white;
-    transition: all 0.2s ease-in-out;
-    &:hover{
-        background-color: white;
-        color: #1947B2;
+
+.icon{
+    > svg {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: 500;
+        // color: black;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: #1947B2;
+        color: white;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: white;
+            color: #1947B2;
+        }
     }
 }
-
 
 .bot_card{
     display: flex;
