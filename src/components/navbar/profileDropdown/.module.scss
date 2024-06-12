@@ -1,8 +1,22 @@
 /* src/ProfileDropdown.css */
 
+// Define a CSS class
+.unselectable {
+    user-select: none; // This prevents text selection
+    -moz-user-select: none; // For Firefox
+    -webkit-user-select: none; // For Chrome, Safari, and Opera
+    -ms-user-select: none; // For Internet Explorer/Edge
+  }
+  
+
+  
 .profile_dropdown {
     position: relative;
     display: inline-block;
+    transition: all 0.5s ease-in-out;
+    * {
+        @extend .unselectable;
+    }
   }
   
   .profile_button {
@@ -27,6 +41,8 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     // padding: 50px 50px;
+    @extend .unselectable;
+
   }
   
   .profile_card{
@@ -36,6 +52,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    @extend .unselectable;
+
     > h1{
         font-size: 1rem;
     }
@@ -63,6 +81,8 @@
     &:hover{
         text-decoration: none;
     }
+    @extend .unselectable;
+
   }
   
   .dropdown_menu li a:hover {

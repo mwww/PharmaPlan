@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import css from './.module.scss';
 // import { log } from 'console';
+import { Link } from "react-router-dom";
 
 const ProfileDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,8 +32,8 @@ const ProfileDropdown = () => {
                 </div>
             </div>
           <ul>
-            <li><a href="#">View Profile</a></li>
-            <li><a href="#">Settings</a></li>
+            <Link to="/PharmaPlan/profile"><li><a>View Profile</a></li></Link>
+            <li><a>Settings</a></li>
             <li><a onClick={onLogout}>Logout</a></li>
           </ul>
         </div>
