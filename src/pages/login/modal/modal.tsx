@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import css from './.module.scss';
 
 interface ModalProps {
@@ -7,9 +7,23 @@ interface ModalProps {
     message: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, message }) => {
-    if (!isOpen) return null;
-
+const Modal = ({ isOpen, onClose, message }: ModalProps) => {
+    useEffect(() => {
+      if (isOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+  
+      return () => {
+        document.body.style.overflow = 'auto';
+      };
+    }, [isOpen]);
+  
+    if (!isOpen) {
+      return null;
+    }
+    
     return (
         <div className={css.modalOverlay}>
             <div className={css.modalContent}>

@@ -1,13 +1,12 @@
 .main {
     background-color: hsla(220, 23%, 95%, 0.85);
     backdrop-filter: blur(25px);
-    z-index: 2;
+    z-index: 1;
     padding: 20px 0;
     position: fixed;
     top: 0;
     width: 100%;
     pointer-events: none;
-  
     > * {
       pointer-events: auto;
     }

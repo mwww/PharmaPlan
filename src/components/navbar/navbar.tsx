@@ -4,6 +4,7 @@ import lg from "./LG_PharmaPlan.png";
 
 import searchIco from '../../assets/search.png';
 import InputBar from "../inputBar/inputBar";
+import ProfileDropdown from './profileDropdown/profileDropDown';
 import { Link } from "react-router-dom";
 
 interface NavBarProps {
@@ -60,7 +61,7 @@ export default function Navbar({ isSpacer, isLoggedIn }: NavBarProps) {
                 <button className={style.btn_login}>Login</button>
               </Link>
             ) : (
-              <div className={style.profile_pic}></div>
+              <ProfileDropdown />
             )}
           </div>
           <button className={`${style.hamburger} ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>

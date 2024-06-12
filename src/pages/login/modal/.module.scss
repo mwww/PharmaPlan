@@ -1,7 +1,9 @@
 .modalOverlay {
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    // width: 126.64%;
+    // height: 560%;
     height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -10,7 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 69421 !important;
+    overflow: hidden;
 }
 
 .modalContent {

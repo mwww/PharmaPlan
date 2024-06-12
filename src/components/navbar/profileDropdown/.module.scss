@@ -1,0 +1,92 @@
+/* src/ProfileDropdown.css */
+
+.profile_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile_button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile_button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .dropdown_menu {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    left: -66px;
+    bottom: -350px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    // padding: 50px 50px;
+  }
+  
+  .profile_card{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    > h1{
+        font-size: 1rem;
+    }
+    > p{
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+  }
+  .dropdown_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown_menu li {
+    padding: 12px 16px;
+  }
+  
+  .dropdown_menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    cursor: pointer;
+    &:hover{
+        text-decoration: none;
+    }
+  }
+  
+  .dropdown_menu li a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .profile_card_pic{
+    min-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("./default-pfp-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .profile_pic {
+    // background-color: black;
+    background-image: url("./default-pfp-2.jpg");
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }

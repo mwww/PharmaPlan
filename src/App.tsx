@@ -53,7 +53,6 @@ function App() {
     setIsLoggedIn(true);
   };
   return (
-    
     <BrowserRouter>
       <Routes>
         <Route element={<Layout isLoggedIn={isLoggedIn}/>}>
