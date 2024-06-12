@@ -27,8 +27,8 @@ const ProfileDropdown = () => {
             <div>
                 <div className={css.profile_card}>
                     <div className={css.profile_card_pic}></div>
-                    <h1>User</h1>
-                    <p>id: 2702329664</p>
+                    <h1>Owen Siau</h1>
+                    <p>id: 2702326151</p>
                 </div>
             </div>
           <ul>

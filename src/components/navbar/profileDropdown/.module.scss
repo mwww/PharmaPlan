@@ -52,7 +52,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    @extend .unselectable;
+     @extend .unselectable;
 
     > h1{
         font-size: 1rem;
@@ -93,7 +93,7 @@
     min-width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-image: url("./default-pfp-2.jpg");
+    background-image: url(/assets/OwenSiau.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@
   
   .profile_pic {
     // background-color: black;
-    background-image: url("./default-pfp-2.jpg");
+    background-image: url(/assets/OwenSiau.jpg);
     min-width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -109,4 +109,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .profile_dropdown{
+        display: none;
+    }
   }

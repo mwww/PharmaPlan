@@ -40,6 +40,11 @@ svg {
     cursor: pointer;
     background-color: #1947B2;
     color: white;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: white;
+        color: #1947B2;
+    }
 }
 
 
