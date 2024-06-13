@@ -59,13 +59,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout isLoggedIn={isLoggedIn}/>}>
-          <Route path="/PharmaPlan/" element={<Home />} />
-          <Route path="/PharmaPlan/article" element={<Article />} />
-          <Route path="/PharmaPlan/medicine" element={<Catalogue />} />
-          <Route path="/PharmaPlan/planner" element={<Planner />} />
-          <Route path="/PharmaPlan/login" element={<Login onLogin={handleLogin}/>} />
-          <Route path="/PharmaPlan/profile" element={<Profile />} />
-          <Route path="/PharmaPlan/checkout" element={<Checkout />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/article" element={<Article />} />
+          <Route path="/medicine" element={<Catalogue />} />
+          <Route path="/planner" element={<Planner />} />
+          <Route path="/login" element={<Login onLogin={handleLogin}/>} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/checkout" element={<Checkout />}></Route>
         </Route>
       </Routes>
 
