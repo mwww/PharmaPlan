@@ -21,10 +21,10 @@ const _card: React.FC<_cardProps> = ({imgPath, title, price, onAddToCart}: _card
         }
     }
     const [count, setCount] = useState<number>(0);
-    function incrementCount(){
-        setCount(count + 1);
-        console.log(count);
-    }
+    // function incrementCount(){
+    //     setCount(count + 1);
+    //     console.log(count);
+    // }
     return (
         <div className={css.cont}>
             <div style={style.b_i}> {/* bg image here */} </div>
