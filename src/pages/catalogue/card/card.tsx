@@ -1,5 +1,5 @@
 import css from './.module.scss'
-import { useState } from 'react';
+// import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,7 +20,7 @@ const _card: React.FC<_cardProps> = ({imgPath, title, price, onAddToCart}: _card
             // backgroundImage: imgPath,
         }
     }
-    const [count, setCount] = useState<number>(0);
+    // const [count, setCount] = useState<number>(0);
     // function incrementCount(){
     //     setCount(count + 1);
     //     console.log(count);
