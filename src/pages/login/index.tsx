@@ -72,7 +72,7 @@ export default function Login({ onLogin }: LoginProps) {
 
     const closeModal = () => {
         setIsModalOpen(false);
-        window.history.pushState(null, '', '/PharmaPlan/');
+        window.history.pushState(null, '', '/');
         window.dispatchEvent(new PopStateEvent('popstate'));
     };
 

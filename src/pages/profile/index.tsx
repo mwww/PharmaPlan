@@ -64,7 +64,7 @@ export default function AccountSettings() {
             <div className={css.profile}>
                 <div className={css.personalInfo}>
                     <div className={css.header}>
-                        <img className={css.avatar} src="/PharmaPlan/assets/OwenSiau.jpg" alt="Thomas Smith" />
+                        <img className={css.avatar} src="/assets/OwenSiau.jpg" alt="Thomas Smith" />
                         <div>
                             <h2 className={css.name}>{formData.firstName} {formData.lastName}</h2>
                             <p className={css.position}>CEO & Co-Founder</p>

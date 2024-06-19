@@ -42,9 +42,9 @@ const Checkout: React.FC = () => {
             </ul>
             <div className={css.checkoutTotal}>
                 {!isShowQR && <h5>Click to show QR code</h5>} 
-                <img src="/PharmaPlan/assets/qris.webp" alt="" onClick={handleShowQR} />
+                <img src="/assets/qris.webp" alt="" onClick={handleShowQR} />
                 {/* Conditional rendering of the QR code */}
-                {isShowQR && <img src="/PharmaPlan/assets/QR.png" alt="" />}
+                {isShowQR && <img src="/assets/QR.png" alt="" />}
                 <p>Total Price: Rp.{totalPrice.toLocaleString()}</p>
             </div>
             <div className={css.checkoutButtonContainer}>

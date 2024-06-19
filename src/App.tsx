@@ -42,6 +42,7 @@ import { useState } from 'react';
 import Layout from "./components/layout/layout"
 
 import Home from "./pages/home"
+import ArticleList from "./pages/articleList/articleList";
 import Article from "./pages/article"
 import Catalogue from "./pages/catalogue"
 import Login from "./pages/login"
@@ -60,6 +61,7 @@ function App() {
       <Routes>
         <Route element={<Layout isLoggedIn={isLoggedIn}/>}>
           <Route path="/" element={<Home />} />
+          <Route path="/article-list" element={<ArticleList />} />
           <Route path="/article" element={<Article />} />
           <Route path="/medicine" element={<Catalogue />} />
           <Route path="/planner" element={<Planner />} />

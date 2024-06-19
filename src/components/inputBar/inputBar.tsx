@@ -33,6 +33,7 @@ const InputBar: React.FC<InputBarProps> = ({
 }) => {
   const [inputValue, setInputValue] = useState("");
   const [filteredItems, setFilteredItems] = useState<Item[]>([]);
+  const [isInputFocused, setIsInputFocused] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -60,6 +61,14 @@ const InputBar: React.FC<InputBarProps> = ({
     }
   };
 
+  const handleInputFocus = () => {
+    setIsInputFocused(true);
+  };
+
+  const handleInputBlur = () => {
+    setIsInputFocused(false);
+  };
+
   placeholder = placeholder ? placeholder : "";
   borderRadius = borderRadius ? borderRadius : 20;
 
@@ -83,19 +92,20 @@ const InputBar: React.FC<InputBarProps> = ({
         value={inputValue}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
+        onFocus={handleInputFocus}
+        onBlur={handleInputBlur}
       />
-      {/* Render filtered items only if there's input */}
-      {inputValue && (
+      {/* Render filtered items only if there's input and if the input is focused */}
+      {inputValue && isInputFocused && filteredItems.length > 0 && (
         <div className={style.itemContainer}>
+          <p>sncjdm</p>
           {filteredItems.slice(0, maxItemsToShow).map((item) => (
-            <Link to="/PharmaPlan/medicine" style={{ textDecoration: 'none' }}>
-            <div className={style.item} key={item.title}>
-                <div className={style.item_bi} style={{ '--background-img': `url(${item.img})`} as React.CSSProperties}></div>
-                <div className={style.item_details}>
-                    <h4>{item.title}</h4>
-                    <p>Rp. {item.price.toLocaleString()}</p>
-                </div>
-            </div>
+            <Link to="/medicine" style={{ textDecoration: 'none' }} key={item.title} className={style.item}>
+              <div className={style.item_bi} style={{ '--background-img': `url(${item.img})` } as React.CSSProperties}></div>
+              <div className={style.item_details}>
+                <h4>{item.title}</h4>
+                <p>Rp. {item.price.toLocaleString()}</p>
+              </div>
             </Link>
           ))}
         </div>

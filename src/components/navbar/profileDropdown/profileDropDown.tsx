@@ -32,7 +32,7 @@ const ProfileDropdown = () => {
                 </div>
             </div>
           <ul>
-            <Link to="/PharmaPlan/profile"><li><a>View Profile</a></li></Link>
+            <Link to="/profile"><li><a>View Profile</a></li></Link>
             <li><a>Settings</a></li>
             <li><a onClick={onLogout}>Logout</a></li>
           </ul>

@@ -4,7 +4,8 @@
 
 import { Outlet } from "react-router-dom";
 import Navbar from "../navbar/navbar";
-import Footer from "../footer/footer";
+// import Footer from "../footer/footer";
+import Footer2 from "../footer2/footer2";
 
 interface LayoutProps {
   isLoggedIn: boolean;
@@ -20,7 +21,8 @@ export default function Layout({ isLoggedIn } : LayoutProps) {
           <Outlet />
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
+      <Footer2 />
     </>
   );
 }

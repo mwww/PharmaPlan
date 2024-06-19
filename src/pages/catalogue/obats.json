@@ -1,72 +1,72 @@
 [
     {
-        "img": "/PharmaPlan/assets/Gaviscon.png",
+        "img": "/assets/Gaviscon.png",
         "title": "Gaviscon Mint Liquid Mint Flavour",
         "price": 95000,
         "category": "Antacids"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Mylanta.png",
+        "img": "/assets/Obat/Mylanta.png",
         "title": "Mylanta Syrup and Tablet",
         "price": 40000,
         "category": "Antacids"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Panadol.png",
+        "img": "/assets/Obat/Panadol.png",
         "title": "Panadol Extra Tablet",
         "price": 15000,
         "category": "Pain Relief"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Pantoprazole.png",
+        "img": "/assets/Obat/Pantoprazole.png",
         "title": "Pantoprazole",
         "price": 270000,
         "category": "Antacids"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Vicks-44-Syrup.png",
+        "img": "/assets/Obat/Vicks-44-Syrup.png",
         "title": "Vicks 44 Syrup",
         "price": 95000,
         "category": "Cold & Flu"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Ator.png",
+        "img": "/assets/Obat/Ator.png",
         "title": "Atorvastin Calcium Trihydrate",
         "price": 95000,
         "category": "Cholesterol"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Ventolin-Inhaler.jpeg",
+        "img": "/assets/Obat/Ventolin-Inhaler.jpeg",
         "title": "Ventolin Inhaler",
         "price": 200000,
         "category": "Asthma"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Actifed.jpeg",
+        "img": "/assets/Obat/Actifed.jpeg",
         "title": "Actifed Plus Expectorant Syrup",
         "price": 66000,
         "category": "Cold & Flu"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Tremenza.png",
+        "img": "/assets/Obat/Tremenza.png",
         "title": "Tremenza Syrup and Tablet",
         "price": 45000,
         "category": "Cough"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Nin.jpeg",
+        "img": "/assets/Obat/Nin.jpeg",
         "title": "Nin Jiom Pei Pa Koa",
         "price": 144000,
         "category": "Cough"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Tolak.jpeg",
+        "img": "/assets/Obat/Tolak.jpeg",
         "title": "Tolak Angin Sidomuncul",
         "price": 37000,
         "category": "Cold & Flu"
     },
     {
-        "img": "/PharmaPlan/assets/Obat/Planb.png",
+        "img": "/assets/Obat/Planb.png",
         "title": "Plan B One-Step",
         "price": 37000,
         "category": "Emergency Contraceptives"

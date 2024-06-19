@@ -1,6 +1,10 @@
 .main {
     background-color: hsla(220, 23%, 95%, 0.85);
+    // background-color: linear-gradient(180deg, hsla(220, 23%, 95%, .95) 0%, hsla(220, 23%, 95%, .75) 100%);
     backdrop-filter: blur(25px);
+
+    // mask-image: linear-gradient(180deg, hsla(220, 23%, 95%, .95) 50%, hsla(220, 23%, 95%, 0) 100%);
+
     z-index: 1;
     padding: 20px 0;
     position: fixed;
@@ -38,7 +42,7 @@
           display: flex;
           gap: 20px;
   
-          &.showMenu {
+          &.showMenu { // man I love this.
             display: flex;
           }
         }

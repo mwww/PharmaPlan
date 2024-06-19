@@ -18,19 +18,19 @@ export default function Navbar({ isSpacer, isLoggedIn }: NavBarProps) {
   const navbarLinks = [
     {
       name: "Home",
-      link: "/PharmaPlan/"
+      link: "/"
     },
     {
       name: "Article",
-      link: "/PharmaPlan/article"
+      link: "/article-list"
     },
     {
       name: "Medicine",
-      link: "/PharmaPlan/medicine"
+      link: "/medicine"
     },
     {
       name: "Planner",
-      link: "/PharmaPlan/planner"
+      link: "/planner"
     },
   ];
 
@@ -41,7 +41,7 @@ export default function Navbar({ isSpacer, isLoggedIn }: NavBarProps) {
   return (
     <nav className={`${style.main} ${isSpacer && style.isSpacer} el`}>
       <div>
-        <Link to="/PharmaPlan/" style={{ textDecoration: 'none' }}>
+        <Link to="/" style={{ textDecoration: 'none' }}>
           <img src={lg} alt="PharmaPlan Logo" />
           <h1>PharmaPlan</h1>
         </Link>
@@ -57,7 +57,7 @@ export default function Navbar({ isSpacer, isLoggedIn }: NavBarProps) {
           <div className={`${style.cta} ${isMenuOpen ? style.showMenu : ''}`}>
             <InputBar placeholder="Find Medicine" leftIcon={searchIco} />
             {!isLoggedIn ? (
-              <Link to="/PharmaPlan/login">
+              <Link to="/login">
                 <button className={style.btn_login}>Login</button>
               </Link>
             ) : (

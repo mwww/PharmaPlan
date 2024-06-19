@@ -1,0 +1,32 @@
+.footer {
+    background-color: #041e5a;
+    color: white;
+    > div {
+        padding: 50px 20px;
+        min-height: 25vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.rightfooter {
+    display: flex;
+    gap: 20px;
+    > div {
+        width: fit-content;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        > h3 {
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.v_dvdr {
+    width: 1px !important;
+    height: 100%;
+    background-color: white;
+}

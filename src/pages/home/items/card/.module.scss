@@ -1,0 +1,68 @@
+.cont {
+    box-sizing: content-box;
+    background-color: #FFF;
+    padding: 20px;
+    // display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    // width: min-content;
+    // height: min-content;
+    // min-height: min-content;
+    max-height: 336px;
+    // width: 100%;
+    border-radius: 10px;
+
+
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    > div:nth-child(1) {
+        // width: 190px;
+        height: 200px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    > div:nth-child(2) {
+        margin-top: 20px;
+        font-size: 16px;
+        // padding: 20px;
+        h5 {
+            // margin-top: 50px;
+            font-size: 20px;
+            margin-bottom: 10px;
+            // min-height: 60px;
+        }
+    }
+}
+
+.icon{
+    > svg {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: 500;
+        // color: black;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: #1947B2;
+        color: white;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: white;
+            color: #1947B2;
+        }
+    }
+}
+
+.bot_card{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    align-items: center;    
+}

@@ -94,11 +94,11 @@ a {
   justify-content: center; */
 
   width: 100%;
-}
-
-.el > div {
-  max-width: 1200px;
-  margin: auto;
+  > div {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
 }
 
 .v-sep {

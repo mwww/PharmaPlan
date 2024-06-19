@@ -5,7 +5,7 @@ import Card from "./card/card";
 import CartSidebar from './cartSideBar/cartSidebar';
 import obats from "./obats.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 interface Medicine {
     img: string;
@@ -32,6 +32,7 @@ export default function Catalogue() {
 
     const [selectedFilters, setSelectedFilters] = useState<{[key: string]: string}>({}); 
     const [cartItems, setCartItems] = useState<Medicine[]>([]);
+    const [cartItemsCount, setCartItemsCount] = useState<number>(0);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const handleFilterChange = (category: string, value: string) => { 
@@ -54,12 +55,24 @@ export default function Catalogue() {
         } else {
             setCartItems(prevItems => [...prevItems, { ...item, count: 1 }]);
         }
+
+        console.log(cartItems.length);
+        setCartItemsCount(prev => prev + 1);
     
-        setIsSidebarOpen(true);
+        // setIsSidebarOpen(true);
     };
 
+    // const handleRemoveItem = (title: string) => {
+    //     setCartItems(prevItems => prevItems.filter(item => item.title !== title));
+    // };
+
     const handleRemoveItem = (title: string) => {
-        setCartItems(prevItems => prevItems.filter(item => item.title !== title));
+        let _ctyToDeduct = 0;
+        setCartItems(prevItems => {
+            _ctyToDeduct = prevItems.find(item => item.title === title)!.count!;
+            return prevItems.filter(item => item.title !== title);
+        });
+        setCartItemsCount(prev => prev - _ctyToDeduct);
     };
     
     const sidebarOpen = () => {
@@ -115,12 +128,17 @@ export default function Catalogue() {
             <CartSidebar 
                 items={cartItems} 
                 isOpen={isSidebarOpen} 
+                setIsOpen={setIsSidebarOpen}
                 onClose={handleCloseSidebar} 
                 onRemoveItem={handleRemoveItem} // Pass down the remove handler
             />
             {!isSidebarOpen ? (
                 <div className={css.sidebar_button} onClick={sidebarOpen}>
                     <FontAwesomeIcon icon={faAngleLeft} />
+                    <div>
+                        <FontAwesomeIcon icon={faCartShopping} />
+                        {cartItemsCount > 0 && cartItemsCount}
+                    </div>
                 </div>
             ) : null}
         </div>
