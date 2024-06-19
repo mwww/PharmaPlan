@@ -98,7 +98,6 @@ const InputBar: React.FC<InputBarProps> = ({
       {/* Render filtered items only if there's input and if the input is focused */}
       {inputValue && isInputFocused && filteredItems.length > 0 && (
         <div className={style.itemContainer}>
-          <p>sncjdm</p>
           {filteredItems.slice(0, maxItemsToShow).map((item) => (
             <Link to="/medicine" style={{ textDecoration: 'none' }} key={item.title} className={style.item}>
               <div className={style.item_bi} style={{ '--background-img': `url(${item.img})` } as React.CSSProperties}></div>
